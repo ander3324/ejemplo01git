@@ -14,17 +14,13 @@ class HelloWorld {
 		}
 	}
 
-	static double dividir(double n1, double n2){
-	      double res;
-		if(n2 != 0){
-			res = (n1 / n2);
-		}else{
-		             errorDivision();
-		}
-	     return res;
-	}
-
-	static String errorDivision(){
-	    return "No se puede dividir por 0";
-	}
+	static String dividir(double n1, double n2){
+		double res;
+	if(n2 != 0){
+	  	 res = (n1 / n2);
+         	    	 return "El resultado es: " + res;
+	           }else{
+        		return "No se puede dividir por 0";
+	          }
+  	}
 }
